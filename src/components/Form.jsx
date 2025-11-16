@@ -60,12 +60,12 @@ function Form({ setIsOn, style }) {
         JSON.stringify(formData)
       );
 
-      setisLoding(false);
-
       if (res.data.success) {
-        setisFormOpen(false);
-        alert("Form submitted successfully!");
+        alert("Form submitted successfully");
+        setIsOn(false);
       }
+
+      setisLoding(false);
     } catch (error) {
       setisLoding(false);
       setError("Some thing want wrong");
@@ -81,7 +81,6 @@ function Form({ setIsOn, style }) {
 
   return (
     <motion.div
-    
       layoutId={setIsOn && "form"}
       transition={{
         duration: 0.3,
