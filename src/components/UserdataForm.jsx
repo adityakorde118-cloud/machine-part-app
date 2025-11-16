@@ -29,9 +29,9 @@ function UserdataForm() {
           }}
           onClick={() => setisFormOpen(true)}
           layoutId="form"
-          className="fixed  h-14 cursor-pointer flex items-center justify-center w-14 bg-white bottom-0 right-0 rounded-full mb-10 z-40 app-Shadow mr-4 border border-[#a4a4a493]"
+          className="fixed  md:h-14 cursor-pointer flex items-center justify-center h-10 w-10  md:w-14 bg-white bottom-0 right-0 rounded-full mb-10 z-40 app-Shadow mr-4 border border-[#a4a4a493]"
         >
-          <MessageSquare color="#000" />
+          <MessageSquare color="#000" className="h-4 w-4 md:h-6 md:w-6" />
         </motion.div>
       )}
     </>

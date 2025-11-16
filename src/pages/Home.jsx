@@ -80,24 +80,22 @@ function Home() {
         "Complete component assembly solutions for faster production and reliable system integration.",
       icon: Layers,
     },
-
- 
   ];
 
   return (
     <div className="relative ">
       <UserdataForm />
       <Slider />
-      <div className="px-20  mt-22">
+      <div className=" px-6  mt-22">
         <div className="grid grid-cols-2 gap-4">
           <section className="py-12   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
             <div className=" max-w-full mx-auto px-6  gap-10 items-center">
               <div className="flex">
                 <div className="max-w-full h-full px-10">
-                  <h2 className="text-3xl font-bold mb-4 heding text-gray-800">
+                  <h2 className=" text-lg md:text-3xl font-bold mb-4 heding text-gray-800">
                     About Our Company
                   </h2>
-                  <p className="text-sm w-full discription leading-relaxed text-gray-500 mb-6">
+                  <p className=" text-[12px] sm:text-smw-full discription leading-relaxed text-gray-500 mb-6">
                     MechaParts Industries is a global leader in precision part
                     manufacturing, providing high-quality solutions for
                     automotive, aerospace, and energy industries.
@@ -112,13 +110,13 @@ function Home() {
               </div>
             </div>
           </section>
-          <section className="py-12 mt-2   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
+          <section className="py-12 mt-2 w-full col-span-2   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
             <div className="max-w-6xl max-h-80 mx-auto px-6  gap-10 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4 heding text-gray-800">
+                <h2 className="text-lg md:text-3xl font-bold mb-4 heding text-gray-800">
                   Our Process / Workflow
                 </h2>
-                <p className="text-sm discription leading-relaxed text-gray-500 mb-6">
+                <p className="text-[12px] sm:text-sm discription leading-relaxed text-gray-500 mb-6">
                   Our workflow is designed for precision, efficiency, and
                   quality assurance at every stage. From initial concept and
                   design to prototyping, machining, assembly, and final
@@ -136,19 +134,22 @@ function Home() {
               </div>
             </div>
           </section>
-          <div className="flex gap-2 w-full col-span-4 ">
+          <div className="flex gap-2  col-span-4 w-full">
             <section className="py-12 max-w-full mt-2   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
               <div className=" mx-auto px-6  gap-10 items-center">
                 <div className="">
-                  <h2 className="text-3xl font-bold mb-4 heding text-gray-800 ml-3">
-                    Products
+                  <h2 className=" text-xl sm:text-3xl font-bold mb-4 heding text-gray-800 ml-3">
+                    Projects
                   </h2>
                   <div
-                    className="flex gap-4 mb-4   justify-center items-center
+                    className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4   justify-center items-center
                   "
                   >
                     {products.map((product, index) => (
-                      <div key={index} className="p-3 border border-[#e6e6e693] bg-white app-Shadow rounded-xl">
+                      <div
+                        key={index}
+                        className="p-3 border border-[#e6e6e693] bg-white app-Shadow rounded-xl"
+                      >
                         <img
                           src={product.image}
                           alt=""
@@ -179,20 +180,20 @@ function Home() {
               </div>
             </section>
           </div>
-          <div className="h-full max-w-full col-span-4  bg-white app-Shadow rounded-2xl border-2 border-[#e6e6e693] p-4">
-            <h2 className="text-3xl font-bold mb-4 heding text-gray-800 ml-3">
+          <div className="h-full max-w-full col-span-4  bg-white app-Shadow rounded-2xl border-2 border-[#e6e6e693] md:p-4 p-2">
+            <h2 className=" text-xl sm:text-3xl font-bold mb-4 heding text-gray-800 ml-3">
               Servises
             </h2>
-            <div className="flex w-full   gap-2">
+            <div className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className=" items-start mb-4 bg-blue-50 rounded-xl heding w-1/2 p-3"
+                  className=" items-start w-full mb-4 bg-blue-50 rounded-xl heding w-1/2 p-3"
                 >
                   {" "}
                   <div className="flex">
-                    <div className="p-3 bg-blue-100 rounded-lg mr-3">
-                      <service.icon className="h-6 w-6 text-blue-600" />
+                    <div className="lg:p-3 p-3 bg-blue-100 rounded-lg mr-3">
+                      <service.icon className=" h-6 w-6  text-blue-600" />
                     </div>
                     <h4 className=" font-semibold heding text-gray-800 heding text-sm">
                       {service.title}
@@ -206,6 +207,54 @@ function Home() {
             </div>
           </div>
         </div>
+        <section className="py-12 mt-10   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
+          <div className=" max-w-full mx-auto px-6  gap-10 items-center">
+            <div className="flex">
+              <div className="max-w-full h-full px-10">
+                <h2 className="text-xl md:text-3xl font-bold mb-4 heding text-gray-800">
+                  Our Partners
+                </h2>
+                <p className="text-sm w-full discription leading-relaxed text-gray-500 mb-6">
+                  We collaborate with trusted industry leaders who share our
+                  commitment to quality, innovation, and reliability. Together,
+                  we deliver better solutions and stronger results.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 justify-center items-center w-full flex-wrap gap-6 discription text-sm">
+                  <div class="bg-white   text-[12px] md:text-sm  md:p-4 p-2 app-Shadow  border-2 border-[#e6e6e693]  rounded-lg">
+                    TechNova Industries
+                  </div>
+                  <div class="bg-white  text-[12px] md:text-sm  md:p-4 p-2 app-Shadow  border-2 border-[#e6e6e693] rounded-lg">
+                    PrimeMach Engineering
+                  </div>
+                  <div class="bg-white  text-[12px] md:text-sm  md:p-4 p-2 app-Shadow  border-2 border-[#e6e6e693] rounded-lg">
+                    MetalForge Solutions
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]  rounded-lg">
+                    IronAxis Manufacturing
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]  rounded-lg">
+                    MechaCore Systems
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]  rounded-lg">
+                    SteelWave Dynamics
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow  border-2 border-[#e6e6e693] rounded-lg">
+                    ProGear Automations
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]  rounded-lg">
+                    FusionMach Tools
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]   rounded-lg">
+                    TitanWorks Engineering
+                  </div>
+                  <div class="bg-white   text-[12px] md:text-sm md:p-4 p-2 app-Shadow border-2 border-[#e6e6e693]  rounded-lg">
+                    PrecisionPlus Industries
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

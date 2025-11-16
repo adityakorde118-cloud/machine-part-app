@@ -41,74 +41,74 @@ function contact() {
   const socialLinks = [
     {
       name: "Website",
-      icon: <Globe size={26} />,
+      icon: <Globe  />,
       url: "https://www.example.com",
     },
     {
       name: "Facebook",
-      icon: <Facebook size={26} />,
+      icon: <Facebook  />,
       url: "https://facebook.com/example",
     },
     {
       name: "Instagram",
-      icon: <Instagram size={26} />,
+      icon: <Instagram  />,
       url: "https://instagram.com/example",
     },
     {
       name: "Twitter",
-      icon: <Twitter size={26} />,
+      icon: <Twitter  />,
       url: "https://x.com/example",
     },
     {
       name: "LinkedIn",
-      icon: <Linkedin size={26} />,
+      icon: <Linkedin  />,
       url: "https://www.linkedin.com/company/example",
     },
     {
       name: "YouTube",
-      icon: <Youtube size={26} />,
+      icon: <Youtube  />,
       url: "https://youtube.com/@example",
     },
     {
       name: "WhatsApp",
-      icon: <MessageCircle size={26} />,
+      icon: <MessageCircle  />,
       url: "https://wa.me/1234567890",
     },
     {
       name: "Email",
-      icon: <Mail size={26} />,
+      icon: <Mail  />,
       url: "mailto:example@gmail.com",
     },
   ];
 
   return (
     <div>
-      <div className="p-4 text-center text-white mt-20 bg-black w-full">
-        <h1 className="text-4xl md:text-3xl font-bold  heding">Get in Touch</h1>
-        <p className="text-lg discription md:text-sm leading-relaxed max-w-3xl mx-auto text-gray-300">
+      <div className="p-4 text-center text-white sm:mt-20 bg-black w-full">
+        <h1 className="text-xl md:text-4xl md:text-3xl font-bold  heding">Get in Touch</h1>
+        <p className=" text-[14px] lg:text-lg discription md:text-sm leading-relaxed max-w-3xl mx-auto text-gray-300">
           Reach out to us using the details below. Our team replies within 24
           hours.
         </p>
-        <div className="flex justify-center items-center gap-10 mt-8">
+        <div className="flex justify-center flex-col md:flex-row items-center gap-4 mt-8">
           {contactInfo.map((info) => (
-            <div className="flex items-center gap-2">
+            <div className="flex text-[14px] items-center gap-2">
               {info.icon}
               <p>{info.value}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center p-10">
+      <div className="flex items-center justify-center p-10  ">
         <Form
           style={
-            "border border-[#a4a4a493] w-[30%] p-2 cursor-pointer bg-white  mb-10 mr-4 z-20 app-Shadow rounded-xl"
+            "border border-[#a4a4a493]   md:w-[50%]  w-full p-2 cursor-pointer bg-white  mb-10 mr-4 z-20 app-Shadow rounded-xl"
           }
         />
       </div>
       <div className="flex w-full gap-10 items-center justify-center">
         {socialLinks.map((soc, i) => (
           <Link to={soc.url}>
-          <div className="p-2 gap-2 bg-white app-Shadow rounded-lg flex justify-center items-center border border-[#a4a4a493]">
+          <div className="p-2 gap-2 bg-white  app-Shadow rounded-lg flex justify-center items-center border border-[#a4a4a493]">
             {soc.icon}
            
           </div>

@@ -16,12 +16,12 @@ function NavBar() {
   ];
 
   return (
- <nav className="py-2 fixed top-0 w-full z-20  bg-white  flex justify-between items-center px-3">
+ <nav className="py-2 fixed  top-0 hidden  w-full z-[9999]  bg-white   sm:flex justify-between items-center px-3">
   <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
     <img src="./logo.png" alt="" className="h-full w-full object-cover" />
   </div>
 
-  <ul className="flex gap-10 items-center justify-center">
+  <ul className="flex gap-10 items-center justify-center z-40">
     {navItems.map((nav, index) => (
       <li key={index} className="relative">
         <Link

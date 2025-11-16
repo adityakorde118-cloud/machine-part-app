@@ -81,6 +81,7 @@ function Form({ setIsOn, style }) {
 
   return (
     <motion.div
+    
       layoutId={setIsOn && "form"}
       transition={{
         duration: 0.3,
@@ -101,7 +102,7 @@ function Form({ setIsOn, style }) {
       <form
         action=""
         onSubmit={(e) => onSubmit(e)}
-        className="p-4 flex flex-col gap-4"
+        className="p-4 flex flex-col gap-4 "
       >
         <div className="w-full ">
           <label
