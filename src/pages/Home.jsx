@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "../components/Slider";
 import { Link } from "react-router-dom";
-import {} from "lucide-react";
+
 import {
   Cog,
   Box,
@@ -14,8 +14,9 @@ import {
   PackageSearch,
   Leaf,
 } from "lucide-react";
+import UserdataForm from "../components/UserdataForm";
 
-import { p } from "motion/react-client";
+
 
 
 function Home() {
