@@ -17,7 +17,7 @@ function Sidebar() {
       {ismenuOpen ? (
         <motion.div
           layoutId="menu"
-          className=" w-52 m-6 right-0 top-0 mr-1 mt-1 p-2 fixed  rounded-lg z-20"
+          className=" z-40 w-52 m-6 right-0 top-0 mr-1 mt-1 p-2 fixed  rounded-lg z-20"
         >
         <div className="flex items-center w-full justify-end">
            <div className="h-8 w-8 border border-[#a4a4a493] bg-white rounded-full flex items-center justify-center ">
@@ -29,10 +29,10 @@ function Sidebar() {
           </div>
          </div>
         </div>
-          <div>
+          <div >
             {navItems.map((nav) => ( 
              <Link to={nav.path}>
-              <div className="p-2 bg-white cursor-pointer text-center  border border-[#dbdbdb93] discription text-sm text-black  mt-4 rounded-lg">
+              <div className="p-2  bg-white cursor-pointer text-center  border border-[#dbdbdb93] discription text-sm text-black  mt-4 rounded-lg">
                 <p>{nav.name}</p>
               </div>
              </Link>

@@ -76,11 +76,11 @@ function Slider() {
               />
               <div className="absolute   flex flex-col items-start justify-center text-white px-8 md:px-16 bg-gradient-to-t  h-40 bottom-0 w-full  from-white  "></div>
               <div className="absolute inset-0 flex flex-col items-start justify-center text-gray-900 px-8 md:px-16 bg-gradient-to-b  from-white ">
-                <div className="max-w-[70%]  px-14 ml-10 mb-20 discription">
-                  <h2 className=" text-3xl sm:text-3xl md:text-3xl lg:text-5xl text-start font-bold  mb-6">
+                <div className="max-w-[100%] md:w-[70%] px-14  mb-20 discription">
+                  <h2 className=" text-xl sm:text-3xl md:text-3xl lg:text-5xl text-start font-bold  mb-6">
                     {item.title}
                   </h2>
-                  <p className=" text-[14px] lg:text-[14px] leading-6 mb-6 text-start font-[500] text-gray-800 ">
+                  <p className=" text-[11px] md:text-[14px] leading-6 mb-6 text-start font-[500] text-gray-800 ">
                     {item.subtitle}
                   </p>
                 </div>
