@@ -88,10 +88,10 @@ function Home() {
       <UserdataForm />
       <Slider />
       <div className=" px-6  mt-22">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="md:grid md:grid-cols-2 gap-4">
           <section className="py-12   bg-white app-Shadow  rounded-2xl border-2 border-[#e6e6e693] ">
             <div className=" max-w-full mx-auto px-6  gap-10 items-center">
-              <div className="flex">
+              <div className="flex ">
                 <div className="max-w-full h-full px-10">
                   <h2 className=" text-lg md:text-3xl font-bold mb-4 heding text-gray-800">
                     About Our Company

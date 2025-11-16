@@ -105,10 +105,10 @@ function contact() {
           }
         />
       </div>
-      <div className="flex w-full gap-10 items-center justify-center">
+      <div className="flex w-full gap-10 flex-wrap items-center justify-center">
         {socialLinks.map((soc, i) => (
           <Link to={soc.url}>
-          <div className="p-2 gap-2 bg-white  app-Shadow rounded-lg flex justify-center items-center border border-[#a4a4a493]">
+          <div className=" p-2 gap-2 bg-white  app-Shadow rounded-lg flex justify-center items-center border border-[#a4a4a493]">
             {soc.icon}
            
           </div>
