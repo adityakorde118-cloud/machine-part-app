@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 import { p } from "motion/react-client";
-import UserdataForm from "../components/userdataForm";
+
 
 function Home() {
   const products = [
